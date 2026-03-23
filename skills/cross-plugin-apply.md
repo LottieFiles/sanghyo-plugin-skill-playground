@@ -1,10 +1,6 @@
 ---
 name: cross-plugin-apply
-description: |
-  Apply a reference plugin implementation to other plugins. Use when:
-  (1) User says "cross-plugin apply" or "apply to other plugins",
-  (2) User wants to propagate a feature from one plugin to others,
-  (3) User says "check cross-plugin status" or "cross-plugin status".
+description: Use when propagating a feature implementation from one LottieFiles plugin to other plugins, or checking cross-plugin feature status.
 ---
 
 # Cross-Plugin Apply
@@ -108,16 +104,6 @@ GQL-v2-migration: 0/5 done, 5 pending
 ```
 
 **Specific feature:** Show the full status table from tracker.
-
-## Status Values
-
-| Status | Meaning |
-|--------|---------|
-| `✅ ref` | Reference implementation |
-| `✅ done` | Applied and build-verified |
-| `🔄 in-progress` | Currently being applied |
-| `⬚ pending` | Not yet started |
-| `⛔ skip` | Not applicable for this plugin |
 
 ## Critical Rules
 
