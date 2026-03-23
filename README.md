@@ -19,7 +19,6 @@ The skill knows each plugin's differences:
 |--------|-----------|-------|---------------|
 | plugin-aftereffects | LF Design System | Dark | src/gql/ |
 | plugin-figma | LF Design System | Light | ui/src/gql/ |
-| plugin-figma-multi-animation | LF Design System | Light | ui/src/gql/ |
 | plugin-framer | LF Design System | Light | src/gql/ |
 | plugin-canva | Canva Design SDK | Dark & Light (tokens) | src/queries/ |
 | plugin-webflow | Custom color tokens | Dark | src/gql/ |
@@ -32,7 +31,7 @@ See [`skills/cross-plugin-apply.md`](skills/cross-plugin-apply.md) for the full 
 
 How should we share this across the team?
 
-**Option A: Per-repo** — Put the skill in each plugin repo's `.claude/skills/`. Anyone who clones the repo gets it automatically. Downside: 6 copies to keep in sync.
+**Option A: Per-repo** — Put the skill in each plugin repo's `.claude/skills/`. Anyone who clones the repo gets it automatically. Downside: 5 copies to keep in sync.
 
 **Option B: Shared repo** — Keep skills in one repo, each team member symlinks to `~/.claude/skills/`. Single source of truth. Downside: extra setup step per person.
 

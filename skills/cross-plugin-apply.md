@@ -17,14 +17,13 @@ Propagate a reference implementation from one LottieFiles plugin to others, adap
 |--------|-----------|-------|---------------|-------|
 | plugin-aftereffects | LF Design System | Dark | src/gql/ | Adobe CEP environment |
 | plugin-figma | LF Design System | Light | ui/src/gql/ | UI under ui/ subdirectory |
-| plugin-figma-multi-animation | LF Design System | Light | ui/src/gql/ | Based on plugin-figma |
 | plugin-framer | LF Design System | Light | src/gql/ | |
 | plugin-canva | Canva Design SDK | Dark & Light (tokens) | src/queries/ | Canva SDK color tokens |
 | plugin-webflow | Custom color tokens | Dark | src/gql/ | Plugin-defined tokens |
 
 ### UI Adaptation Rules
 
-- **LF Design System plugins** (AE, Figma, Figma-multi, Framer): UI components can be largely reused from reference, adjusting theme (dark/light) only.
+- **LF Design System plugins** (AE, Figma, Framer): UI components can be largely reused from reference, adjusting theme (dark/light) only.
 - **Canva**: GQL/logic layer only from reference. UI must follow Canva Design SDK patterns and token system.
 - **Webflow**: GQL/logic layer only from reference. UI must follow plugin's own component patterns and color tokens.
 
@@ -52,7 +51,7 @@ All feature registration and status tracking is persisted here. Read this file a
    - Feature name, ref plugin, guide path, registered date
    - `ref-files:` list with file path + purpose
    - `summary:` one-line pattern description
-   - Status table with all 6 plugins (ref plugin as `✅ ref`, others as `⬚ pending`)
+   - Status table with all 5 plugins (ref plugin as `✅ ref`, others as `⬚ pending`)
 6. If `--target` is provided, proceed to Apply flow
 
 ### 2. Apply to Target (`--target`)
@@ -104,8 +103,8 @@ All feature registration and status tracking is persisted here. Read this file a
 
 **All features:**
 ```
-DAM-upload: 2/6 done, 1 in-progress, 3 pending
-GQL-v2-migration: 0/6 done, 6 pending
+DAM-upload: 2/5 done, 1 in-progress, 2 pending
+GQL-v2-migration: 0/5 done, 5 pending
 ```
 
 **Specific feature:** Show the full status table from tracker.
